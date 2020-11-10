@@ -6,7 +6,7 @@ function MessageList(props){
   <>
     <h3>Latest Messages:</h3>
     <ol>
-      {props.messages.map(message => <Message text={message.text} user={message.user} key={message.id}/>)}
+      {props.messages.map(message => <Message content={message.content} username={message.username} key={message.id}/>)}
     </ol>
   </>
   )

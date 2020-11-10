@@ -9,18 +9,18 @@ class MessageContainer extends React.Component {
     messages: [
       {
         id: 1,
-        user: "1NiteAtFreddys",
-        text: "Starting a new movie where I kill a bunch of coding school students. Calling it Freddy vs. JSON"
+        username: "1NiteAtFreddys",
+        content: "Starting a new movie where I kill a bunch of coding school students. Calling it Freddy vs. JSON"
       },
       {
         id: 2,
-        user: "NotThatMikeMyers",
-        text: "Freddy curses too much for my taste - Michael Myers"
+        username: "NotThatMikeMyers",
+        content: "Freddy curses too much for my taste - Michael Myers"
       },
       {
         id: 3,
-        user: "1NiteAtFreddys",
-        text: "Honestly I've found everyone's nightmares are bad enough without my help today. -FK"
+        username: "1NiteAtFreddys",
+        content: "Honestly I've found everyone's nightmares are bad enough without my help today. -FK"
       }
     ]
   }
