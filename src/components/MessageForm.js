@@ -24,7 +24,7 @@ export default class MessageForm extends Component {
   render(){
     return(<form onSubmit={this.onSubmit}>
       <label>
-        username:
+        Username:
         <input type="content" name="username" value={this.state.username} onChange={this.onChange} />
       </label><br/>
       <label>
