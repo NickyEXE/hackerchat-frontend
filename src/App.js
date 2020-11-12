@@ -4,9 +4,11 @@ import MessageContainer from './containers/MessageContainer'
 
 function App() {
   return (<>
-    <h1>Welcome to Hacker Chat</h1>
-    <h3>A place for hackers and slashers to cut loose and cut flesh</h3>
-    <MessageContainer/>
+      <header>
+      <h1>Welcome to Hacker Chat</h1>
+      <h3>A place for hackers and slashers to cut loose and cut flesh</h3>
+      </header>
+      <main><MessageContainer/></main>
     </>
   );
 }
