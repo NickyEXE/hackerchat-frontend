@@ -17,7 +17,7 @@ class Message extends React.Component {
   }
 
   render(){
-    return (<li><strong>{this.props.username}: </strong>{ this.props.content } <LikeButton onClick={this.onClick} numberOfLikes={this.state.numberOfLikes}/> </li>)
+    return (<li><div className="username"><strong>{this.props.username}: </strong></div><div className="message">{ this.props.content }</div><LikeButton onClick={this.onClick} numberOfLikes={this.state.numberOfLikes}/></li>)
   }
 }
 
