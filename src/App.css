@@ -12,6 +12,15 @@ body {
   pointer-events: none;
 }
 
+ol {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
 aside {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 15%; /* Set the width of the sidebar */
