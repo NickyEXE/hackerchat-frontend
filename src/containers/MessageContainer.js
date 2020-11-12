@@ -1,18 +1,18 @@
 import React from 'react'
 import MessageList from './MessageList'
 import MessageForm from '../components/MessageForm'
-import { v4 as uuidv4 } from 'uuid';
 
 class MessageContainer extends React.Component {
 
   state = {
+    name: null,
     messages: []
   }
 
   componentDidMount(){
-    fetch("http://localhost:3000/messages")
+    fetch("http://localhost:3000/channels/1")
     .then(res => res.json())
-    .then(json => this.setState({ messages: json }))
+    .then(json => this.setState({messages: json.messages, name: json.name}))
   }
 
   addMessage = (message) => {
@@ -31,6 +31,7 @@ class MessageContainer extends React.Component {
   render(){
     return(
       <>
+        <h3>#{this.state.name}</h3>
         <MessageForm addMessage={this.addMessage}/>
         <MessageList messages={this.state.messages}/>
       </>
